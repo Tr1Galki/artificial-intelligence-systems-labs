@@ -1,0 +1,596 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3/"
+     xml:base="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:untitled-ontology-3="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#card_fraction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#card_fraction">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Card"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Fraction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#card_quality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#card_quality">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Card"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Quality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#has_element -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#has_element">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Deck"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Card"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#card_power -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#card_power">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Card"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#card_provision -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#card_provision">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Card"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#count_of_cards -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#count_of_cards">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Deck"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#sum_of_card_provision -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#sum_of_card_provision">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Deck"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Card -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Card"/>
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Deck -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Deck"/>
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Fraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Fraction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Quality"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#bronze -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#bronze">
+        <rdf:type rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Quality"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#gold"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#ciri -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#ciri">
+        <rdf:type rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Card"/>
+        <untitled-ontology-3:card_fraction rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#neutral"/>
+        <untitled-ontology-3:card_quality rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#gold"/>
+        <untitled-ontology-3:card_power rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0</untitled-ontology-3:card_power>
+        <untitled-ontology-3:card_provision rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10.0</untitled-ontology-3:card_provision>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#deck_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#deck_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Deck"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#deck_2"/>
+        <untitled-ontology-3:has_element rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#ciri"/>
+        <untitled-ontology-3:has_element rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#geralt"/>
+        <untitled-ontology-3:has_element rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#regis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#deck_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#deck_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Deck"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#demovend -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#demovend">
+        <rdf:type rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Card"/>
+        <untitled-ontology-3:card_fraction rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#northern_realms"/>
+        <untitled-ontology-3:card_quality rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#gold"/>
+        <untitled-ontology-3:card_power rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</untitled-ontology-3:card_power>
+        <untitled-ontology-3:card_provision rdf:datatype="http://www.w3.org/2001/XMLSchema#double">13.0</untitled-ontology-3:card_provision>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#geralt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#geralt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Card"/>
+        <untitled-ontology-3:card_fraction rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#neutral"/>
+        <untitled-ontology-3:card_quality rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#gold"/>
+        <untitled-ontology-3:card_power rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</untitled-ontology-3:card_power>
+        <untitled-ontology-3:card_provision rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.0</untitled-ontology-3:card_provision>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#gold -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#gold">
+        <rdf:type rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Quality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#grott -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#grott">
+        <rdf:type rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Card"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Fraction"/>
+        <untitled-ontology-3:card_fraction rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#grott"/>
+        <untitled-ontology-3:card_quality rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#gold"/>
+        <untitled-ontology-3:card_power rdf:datatype="http://www.w3.org/2001/XMLSchema#double">13.0</untitled-ontology-3:card_power>
+        <untitled-ontology-3:card_provision rdf:datatype="http://www.w3.org/2001/XMLSchema#double">12.0</untitled-ontology-3:card_provision>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#monsters -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#monsters">
+        <rdf:type rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Fraction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#neutral -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#neutral">
+        <rdf:type rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Fraction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#nilfgard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#nilfgard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Fraction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#northern_realms -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#northern_realms">
+        <rdf:type rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Fraction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#regis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#regis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Card"/>
+        <untitled-ontology-3:card_fraction rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#neutral"/>
+        <untitled-ontology-3:card_quality rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#gold"/>
+        <untitled-ontology-3:card_power rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</untitled-ontology-3:card_power>
+        <untitled-ontology-3:card_provision rdf:datatype="http://www.w3.org/2001/XMLSchema#double">11.0</untitled-ontology-3:card_provision>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#renfri_band -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#renfri_band">
+        <rdf:type rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Card"/>
+        <untitled-ontology-3:card_fraction rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#neutral"/>
+        <untitled-ontology-3:card_quality rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#bronze"/>
+        <untitled-ontology-3:card_power rdf:datatype="http://www.w3.org/2001/XMLSchema#double">6.0</untitled-ontology-3:card_power>
+        <untitled-ontology-3:card_provision rdf:datatype="http://www.w3.org/2001/XMLSchema#double">6.0</untitled-ontology-3:card_provision>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#roach -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#roach">
+        <rdf:type rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Card"/>
+        <untitled-ontology-3:card_fraction rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#neutral"/>
+        <untitled-ontology-3:card_quality rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#gold"/>
+        <untitled-ontology-3:card_power rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</untitled-ontology-3:card_power>
+        <untitled-ontology-3:card_provision rdf:datatype="http://www.w3.org/2001/XMLSchema#double">8.0</untitled-ontology-3:card_provision>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#scoiatael -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#scoiatael">
+        <rdf:type rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Fraction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#skellige -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#skellige">
+        <rdf:type rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Fraction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#syndicate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#syndicate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Fraction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#triss -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#triss">
+        <rdf:type rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Card"/>
+        <untitled-ontology-3:card_fraction rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#neutral"/>
+        <untitled-ontology-3:card_quality rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#gold"/>
+        <untitled-ontology-3:card_power rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</untitled-ontology-3:card_power>
+        <untitled-ontology-3:card_provision rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.0</untitled-ontology-3:card_provision>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#yennefer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#yennefer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Card"/>
+        <untitled-ontology-3:card_fraction rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#neutral"/>
+        <untitled-ontology-3:card_quality rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#gold"/>
+        <untitled-ontology-3:card_power rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0</untitled-ontology-3:card_power>
+        <untitled-ontology-3:card_provision rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.0</untitled-ontology-3:card_provision>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#ciri"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#demovend"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#geralt"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#grott"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#regis"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#renfri_band"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#roach"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#triss"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#yennefer"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#monsters"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#neutral"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#nilfgard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#northern_realms"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#scoiatael"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#skellige"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#syndicate"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3/c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3/card">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3/power">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3/provision">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>how much cards in game</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#Card"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#count"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3/c"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>count cards in deck</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#has_element"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#deck_1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3/card"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#count"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3/card"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Average power of cards in deck</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#has_element"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#deck_1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3/card"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#card_power"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3/card"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3/power"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#avg"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3/power"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Sum of provision</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#has_element"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#deck_1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3/card"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3#card_provision"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3/card"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3/provision"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#sum"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/днс/ontologies/2023/9/untitled-ontology-3/provision"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
